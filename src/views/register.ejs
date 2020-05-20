@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-7 login-left">
+            </div>
+            <div class="col-5 mt-2">
+                <div>
+                    <% if(errors != "") { %>
+                        <% errors.forEach((item) => { %>
+                            <div class="alert alert-danger">
+                                <%- item %>
+                            </div>
+                        <% }); %>
+                    <% } %>
+                </div>
+                <form method="POST" action="/register">
+                    <div class="form-group">
+                        <label for="fullName">Full name:</label>
+                        <input type="text" class="form-control" name="fullName" id="fullName" placeholder="Full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address: (*)</label>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password: (*)</label>
+                        <input type="password" name="password" class="form-control" id="password"
+                               placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordConfirmation">Confirm password: (*)</label>
+                        <input type="password" class="form-control" name="passwordConfirmation"
+                               id="passwordConfirmation" placeholder="Password Confirmation">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+
+                <hr>
+                <div>
+                    If you already have had an account. <a href="/login">Log in</a>.
+                </div>
+                <div>
+                    Return to <a href="/">Home Page</a>
+                </div>
+                <br><br>
+                <div>
+                    View full tutorial on Youtube. <a target="_blank"
+                                                      href="https://www.youtube.com/channel/UCHqJxLo7mKam9GKqqwr2wfA/playlists">Click
+                        here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
