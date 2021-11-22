@@ -2,7 +2,7 @@
 
 **Project : A login/register sytem using NodeJS platform (NodeJS + MySQL + Bootstrap 4).**
 
-View full tutorial on youtube: https://www.youtube.com/watch?v=DcB1Ge0HQ4I&list=PLNOjHC_BXrfCNWe0ghCxEmNVeHN_J5K3k
+View full tutorial on [Youtube](https://www.youtube.com/watch?v=DcB1Ge0HQ4I&list=PLNOjHC_BXrfCNWe0ghCxEmNVeHN_J5K3k)
 
 How to run this project: 
 
